@@ -150,7 +150,85 @@ header{
 
 
 
+.middle-section{
+  height : 1100px;
+  width : 100%;
+  background : url("../images/middleBackground.svg");
+  background-size : cover;
+  background-repeat: no-repeat;
+  background-position: center;
 
+}
+
+.middle-section-title{
+  color : white;
+  font-weight: 700;
+  font-style: normal;
+  font-size: 24px;
+  line-height: 27.8px;
+  display: inline-block;
+  margin-top : 160px;
+}
+
+
+.mis-cards-container{
+  width : 80%;
+  height : 440px;
+  float : right;
+  margin-right : 80px;
+  margin-top : 70px;
+}
+
+.mis-card{
+  background-color : white;
+  width : 150px;
+  height : 150px;
+  display: inline-block;
+  border-radius: 10px;
+  text-align: center;
+  -webkit-box-shadow: -7px 9px 17px -12px rgba(0,0,0,0.75);
+  -moz-box-shadow: -7px 9px 17px -12px rgba(0,0,0,0.75);
+  box-shadow: -7px 9px 17px -12px rgba(0,0,0,0.75);
+  position: relative;
+  margin-left : 100px;
+}
+
+.mis-card:hover .mis-card-link{
+  color : white;
+  background-color: rgba(99,99,99,0.27);
+  border-color : white;
+
+}
+.mis-card img{
+  width : 70%;
+  margin-top : 50%;
+  transform : translate(0, -50%);
+}
+
+.mis-card-link{
+  position: relative;
+  top : -125px;
+  text-decoration: none;
+  font-weight: 300;
+  font-size : 16px;
+  width : 112px;
+  border-radius: 4px;
+  padding : 4px 0px;
+  border : 2px solid transparent;
+  cursor: pointer;
+  display: inline-block;
+  color : transparent;
+  background-color : transparent;
+  transition: all 0.4s ease;
+
+}
+
+
+.mis-spacer{
+  display: inline-block;
+  width : 120px;
+  height : 220px;
+}
 /* Sliding Animation */
 
 *, *::after, *::before {
