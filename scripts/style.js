@@ -1,3 +1,4 @@
+
 var cw = $('.mis-card').width();
 $('.mis-card').css({'height':cw+'px'});
 window.addEventListener('resize', ()=>{
@@ -5,6 +6,7 @@ window.addEventListener('resize', ()=>{
 	$('.mis-card').css({'height':cw+'px'});
 });
 
+// Menu Toggle
 var hum = document.querySelector('.hum-toggle');
 var close = document.querySelector('.close-toggle');
 var menu = document.querySelector('.header-menu');
@@ -22,5 +24,7 @@ close.addEventListener('click', e=>{
 	menu.style.animationDuration = "1s";
 	setTimeout(() => {  menu.style.display = "none";menu.style.animation = "drop 1s 1";}, 1000);
 
-
 });
+
+
+// List of the services cards

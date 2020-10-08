@@ -6,7 +6,7 @@ body{
 	box-sizing: border-box;
 	font-family: 'Ubuntu';
 	background-color : #E9F6FF;
-	
+	 
 }
 
 .top-header {
@@ -157,16 +157,91 @@ header{
 	top : 320px;
 	right : 10%;
 	animation: floating 6s infinite;
+    animation-timing-function: linear;
+
 }
 
 @keyframes floating{
 	50%{
-		top : 340px;
+    transform: translateY(30px);
 	}
 
 }
 
+/* Services Section */
+.services-section{
+  width : 100%;
+  height : 600px;
+  display: grid;
+  grid-template-columns: 40% 60%;
+  position: relative;
+  z-index: -1;
+}
 
+
+.services-bio h2{
+  font-weight: 700;
+  font-size : 36px;
+  color : #000839;
+}
+.services-bio p{
+  font-weight: 300;
+  font-size : 18px;
+  line-height: 34px;
+}
+
+
+.services-cards{
+
+  overflow: hidden;
+  position: relative;
+  top : -250px;
+  height : 1000px;
+
+
+}
+.services-cards-definer{
+
+  display: block;
+}
+
+
+
+.service-card{
+  height : 400px;
+  width : 35%;
+  min-width : 270px;
+  max-width : 400px;
+  background-color : white;
+  text-align: center;
+  padding : 10px;
+  border-radius: 24px;
+  display: inline-block;
+  margin-left : 2%;
+  margin-top : 20px;
+  box-shadow: 0px 8px 22px 2px rgba(0, 0, 0, 0.25);
+  animation: serve 30s infinite;
+  animation-timing-function: linear;
+}
+
+.service-card-title{
+  font-weight: 400;
+  font-size : 24px;
+  margin-top : 15px;
+  display: block;
+}
+
+.service-card-bio{
+  display: block;
+  margin-top : 15px;
+  font-weight: 300;
+  font-size : 16px;
+  line-height : 20px;
+
+}
+
+
+/* Middle Section */
 
 .middle-section{
   height : 1100px;
@@ -175,6 +250,9 @@ header{
   background-size : cover;
   background-repeat: no-repeat;
   background-position: center;
+  text-align : center;
+  padding-top : 100px;
+
 
 }
 
@@ -184,82 +262,312 @@ header{
   font-style: normal;
   font-size: 24px;
   line-height: 27.8px;
-  display: inline-block;
-  margin-top : 160px;
+  display: block;
+  text-align : left;
+
 }
 
-
-.mis-cards-container{
-  width : 80%;
-  height : 440px;
-  float : right;
-  margin-right : 80px;
-  margin-top : 70px;
-}
 
 .mis-card{
+  display : inline-block;
   background-color : white;
-  width : 12%;
-  height : auto;
-  display: inline-block;
-  border-radius: 10px;
+  width : 20%;
+  min-width : 100px;
+  max-width : 150px;
+  margin-left : 10%;
+  margin-top : 50px;
+  border-radius: 13px;
   text-align: center;
-  -webkit-box-shadow: -7px 9px 17px -12px rgba(0,0,0,0.75);
-  -moz-box-shadow: -7px 9px 17px -12px rgba(0,0,0,0.75);
-  box-shadow: -7px 9px 17px -12px rgba(0,0,0,0.75);
+  background-color : white;
+  background-image : url("../images/photo.png");
+  background-size : cover;
+  background-repeat: no-repeat;
+  background-position: center;
+
+}
+
+.mis-card a{
   position: relative;
-  margin-left : 8%;
-}
-
-.mis-card:hover .mis-card-link{
-  color : white;
-  background-color: rgba(99,99,99,0.27);
-  border-color : white;
-
-}
-.mis-card img{
-  width : 70%;
-  margin-top : 50%;
-  transform : translate(0, -50%);
-}
-
-.mis-card-link{
-  position: relative;
-  top : -120px;
-  text-decoration: none;
-  font-weight: 300;
-  font-size : 16px;
-  width : 112px;
-  border-radius: 4px;
-  padding : 4px 0px;
-  border : 2px solid transparent;
-  cursor: pointer;
-  display: inline-block;
+  top : calc(50% - 15px);
+  transform: translate(0, -50%);
   color : transparent;
   background-color : transparent;
-  transition: all 0.4s ease;
+  text-decoration: none;
+  padding: 5px 20px;
+  border : 1px solid transparent;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: all 0.2s ease;
 
 }
 
-.mis-breaker{
+.mis-card:hover .mis-link{
+  background-color : rgba(99, 99, 99, 0.27);
+  color : white;
+  border : 1px solid white;
+}
+
+.header-button{
+  position: absolute;
+  top : 20px;
+  right : 80px;
+}
+
+
+/* Review Section*/
+.review-section{
+  width : 100%;
+  height : 600px;
+  margin-top : -150px;
+}
+
+.reviews-title{
+  font-weight: 700;
+  font-size : 36px;
+  color : #000839;
+}
+
+.review-cards-container{
+  text-align : center;
+  margin-top : 60px;
+
+
+}
+.review-card{
+  width : 500px;
+  height : 195px;
+  display: inline-block;
+  text-align : left;
+  margin : 0px 100px;
+}
+
+.review-card-img{
+  width : 70px;
+  height : 70px;
+  border-radius: 35px;
+  background-color : red;
+  display: inline-block;
+}
+
+.review-card-line{
+  width : calc(100% - 82px);
+  height : 10px;
+  background-color : #FFC700;
+  display: inline-block;
+  position: relative;
+  top : 40px;
+  float : right;
+}
+
+.review-card-line span{
+  position: relative;
+  top : -11px;
+  left : 4px;
+  font-weight: 500;
+  font-size : 18px;
+}
+
+.review-card-line img{
+  width : 55px;
+  height : 55px;
+  float : right;
+  position: relative;
+  top : -25px;
+  right : 25px;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+.review-card-line img:hover{
+  transform: scale(1.2, 1.2);
+}
+
+.review-card-line p{
+  padding-right : 20px;
+  padding-left : 10px;
+  font-weight: 300;
+  font-style : italic;
+  font-size : 18px;
+  line-height: 25px;
+
+}
+
+.review-card-line-quoute{
+  font-weight: 500;
+  font-size : 48px;
+  line-height : 41px;
+  display: block;
+  margin-bottom: -40px;
+  margin-left : -10px;
+}
+
+.review-card-line-quoute-end{
+  font-weight: 500;
+  font-size : 48px;
+  line-height : 41px;
+  display: block;
+  float : right;
+  margin-top : -30px;
+}
+
+
+/* Footer Section */
+.footer{
+  width : 100%;
+  height : 765px;
+  background : url("../images/footerBG.svg");
+  background-size : cover;
+  background-position: center;
+  background-repeat: no-repeat;
+
+}
+
+.footer-container{
+  width : 90%;
+  height : 500px;
+  position: relative;
+  left : 50%;
+  top : 190px;
+  transform: translate(-50%, 0);
+  display: grid;
+  grid-template-columns: 50% 50%;
+}
+
+.contact-col{
+  display: grid;
+  grid-template-rows: 50% 50%;
+
+}
+
+
+.footer-title{
+  font-size : 36px;
+  font-weight: bold;
+  color : white;
   display: block;
 }
 
-.mis-spacer{
-  display: inline-block;
-  width : 120px;
-  height : 220px;
+.footer-breaker{
+  display: block;
+  height : 15px;
+}
+.footer-address{
+  width : 100%;
+  display: block;
+  padding : 7.5px 25px;
 }
 
-  .header-button{
-    position: absolute;
-    top : 20px;
-    right : 80px;
+.footer-address img{
+  vertical-align: middle;
+  margin-right : 10px;
+}
+.footer-address span{
+  vertical-align: middle;
+  font-weight: 300;
+  font-size : 18px;
+  color : #c4c4c4;
+}
 
-  }
+.footer-subscribe{
+  width : 305px;
+  background-color : white;
+  display: grid;
+  grid-template-columns: auto 80px;
+  height : 34px;
+  border-radius: 5px;
+  margin : 7.5px 25px;
+}
 
+.footer-subscribe input{
+  border : none;
+  border-radius: 5px;
+  padding-left : 10px;
+  font-size : 14px;
+  font-weight: 300;
+  font-family: "Ubuntu";
+  outline : none;
+}
 
+.footer-subscribe button{
+  color : white;
+  border : 1px solid #FFA41B;
+  border-radius: 5px;
+  border-top-left-radius: 0px;
+  border-bottom-left-radius: 0px;
+  background-color : #FFA41B;
+  font-weight: 700;
+  font-size : 14px;
+  font-family: "Ubuntu";
+  cursor: pointer;
+  transition: background-color 0.2s ease;
+}
 
+.footer-subscribe button:hover{
+  background-color : #000839;
+}
+
+.footer-card{
+  width : 500px;
+  height : 130px;
+  max-width : 95%;
+  background-color : white;
+  display: grid;
+  grid-template-columns: 40% 60%;
+  margin : 15px 25px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.footer-card-img{
+  height : 130px;
+  border-top-left-radius: 5px;
+  border-bottom-left-radius: 5px;
+}
+
+.footer-card-bio{
+  padding: 7px 10px;
+
+}
+
+.footer-card-bio span{
+  font-size : 18px;
+  font-weight: 700;
+  color : #000839;
+}
+
+.footer-card-bio p{
+  font-weight: 300;
+  font-size : 12px;
+  line-height : 13.8px;
+  font-style: italic;
+  color : #000839;
+  text-decoration: none;
+
+}
+
+.footer-card-author{
+  font-size : 14px;
+  font-weight: 300;
+  font-style: italic;
+  color : #000839;
+  background-color : #FFC700;
+  margin-top : 15px;
+  display: inline-block;
+  padding-right : 30px;
+  padding-left : 5px;
+  height: 7px;
+}
+
+.footer-card-author i{
+  position: relative;
+  top : -9px;
+
+}
+
+a{
+  text-decoration: none;
+}
+/* Media Quries */
 @media  only screen and (max-width: 1200px) {
   
   .header-menu li{
@@ -320,9 +628,13 @@ header{
   }
 
 
+  .services-bio{
+    padding-right : 10px;
+  }
 }
 
 @media  only screen and (max-width: 950px) {
+
   .header-container{
     text-align: center;
   }
@@ -348,19 +660,140 @@ header{
   .header-var{
     top : -7px;
   }
-    .cta, .sub-cta{
+  .cta, .sub-cta{
     font-size : 16px;
     padding : 8px 16px;
     border-radius: 3px;
   }
-}
 
-@media  only screen and (min-width: 600px) {
-  .header-var{
-    top : 0px;
+  .services-section{
+    grid-template-columns: 100%;
+    grid-template-rows: auto auto;
+    height : auto;
   }
 
+  .services-cards{
+    top : 0px;
+    height : auto;
+  }
+
+
+  .services-cards-definer{
+    display: none;
+  }
+
+
+
+  .service-card{
+    position: relative;
+    width : 90%;
+    max-width: 500px;
+    margin-bottom: 30px;
+    top : -600px;
+    height : 140px;
+    border-radius: 5px;
+    display: grid;
+    grid-template-columns: 30% 0% 70%;
+    animation: none;
+  }
+
+  .service-card-img img{
+    width : 100%;
+    vertical-align: middle;
+    position: relative;
+    top : 50%;
+    transform: translate(0, -50%);
+  }
+
+  .service-card-bio{
+    text-align : left;
+    vertical-align: middle;
+    font-size : 12px;
+    padding-top : 10px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    max-width: 30ch;
+    padding-left : 10px;
+  }
+
+  .service-card-title{
+    white-space: nowrap;
+    position: relative;
+    top : -20px;
+    left : 10px;
+  }
+  .first-card{
+    margin-top : 600px;
+  }
+
+  .middle-section{
+    margin-top : -500px;
+  }
+
+  .service-fill{
+    display : none;
+  }
+
+  /* Footer Responsive */
+  .footer-container{
+    grid-template-columns: 100%;
+    grid-template-rows: 50% 50%;
+    height : 1000px;
+  }
+
+  .footer-support{
+    background-color : #000839;
+    width : 100%;
+    height : 600px;
+    border : none;
+    margin-top : -2px;
+  }
+
+
+  .footer-card{
+    width : 95%;
+    margin : 15px 5px;
+    height : auto;
+  }
+
+  .footer-card-img{
+    position: relative;
+    height : 100%;
+  }
 }
+
+@media  only screen and (min-width: 600px) {.header-var{top : 0px;}}
+
+@media  only screen and (max-width: 400px) {
+
+
+.footer-subscribe{
+  width : 70%;
+  grid-template-columns: auto 80px;
+}
+
+.footer-subscribe input{
+  width : 100%;
+}
+
+.footer-subscribe button{
+}
+
+
+}
+
+/* Services Animations */
+@keyframes serve{
+  0%{
+    position: relative;
+    transform: translateY(0px);
+  }
+  100%{
+    position: relative;
+    transform: translateY(-840px);
+  }
+}
+
 @keyframes drop{0%{height : 1px;}}
 @keyframes appear{0%{color : transparent;background-color : transparent;border-color : transparent;}}
 @keyframes close{

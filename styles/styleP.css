@@ -1,0 +1,146 @@
+body{
+    background-color: e9f6ff;
+    border-color: none;
+}
+.cards-container{
+    margin-top: -600px;
+}
+.card{
+    margin-left : 75%;
+
+    background-color: #ffffff;
+    z-index: -1;
+    padding: 10px;
+    margin-left : 75%;
+    border-radius: 24px;
+    text-align: center;
+    width : 270px;
+    height : 400px;
+    box-shadow: 0px 8px 22px 2px rgba(0, 0, 0, 0.25);
+    margin-top: 40px;
+    overflow: hidden;
+}
+
+.cards-container1{
+    margin-left: -1400px;
+    margin-top: -1100px;
+}
+.p2{
+font-family: Ubuntu;
+font-size: 14px;
+font-style: normal;
+font-weight: 300;
+line-height: 20px;
+letter-spacing: 0em;
+text-align: center;
+
+}
+.p1{
+    font-family: Ubuntu;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 28px;
+    letter-spacing: 0em;
+    text-align: center;
+
+}
+.title-our{
+    font-family: Ubuntu;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 36px;
+    line-height: 41px; 
+    color: #000839;
+}
+.txt-our{
+    width: 400px;
+    height: 494px;
+    margin-left: 5px;
+    font-style: normal;
+    font-weight: 300;
+    font-size: 18px;
+    line-height: 188.4%;
+}
+.top-header{
+    z-index: 2;
+}
+@media screen and (max-width: 1200px) {
+    .cards-container1{
+        margin-left: -1200px;
+    }
+    
+    .card{
+        width: 250px;
+
+    }
+        .txt-our{
+        width: 280px;
+    }
+    .p-txt-our{
+        font-size: 13px;
+    }
+}
+@media screen and (max-width: 1000px) {
+    
+    .card{
+        width: 230px;
+
+    }
+    .txt-our{
+        width: 250px;
+    }
+    .p-txt-our{
+        font-size: 11px;
+    }
+    .cards-container1{
+        margin-left: -1000px;
+    }
+    .p1{
+        font-size:20px;
+    }
+    .title-our{
+        font-size: 27px;
+    }
+}
+@media screen and (max-width:900px){
+    .cards-container{
+        margin-top: 200px;
+    }
+    .title-our{
+        font-weight: bold;
+        font-size: 38px;
+        line-height: 41px;
+        color: #000839;
+    }
+
+    .txt-our{
+        width: 500px;
+        height: 494px;
+        margin-left: 5px;  
+        font-weight: 300;
+        font-size: 20px;
+    }
+    .card{
+        width : 270px;
+    }
+    .cards-container1{
+        margin-left: -1500px;
+    }
+    .cards-container{
+        margin-left: -200px;
+    }
+    
+}
+@media screen and (max-width:700px){
+    .txt-our{
+        width: 400px;
+    font-size: 17px;
+    }
+.title-our{
+    font-size: 30px;
+    }
+    .card{
+        width: 250px;
+    }
+}
