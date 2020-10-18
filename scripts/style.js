@@ -27,4 +27,19 @@ close.addEventListener('click', e=>{
 });
 
 
-// List of the services cards
+// Play The Video of reviews
+var videoPlayerContainer = document.querySelector("#videoPlayerContainer");
+var videoPlayerCross = document.querySelector("#videoPlayerCross");
+var videoPlayer = document.querySelector('#videoPlayer');
+
+function videoPlay(video){
+	videoPlayerContainer.style.display = "block";
+	$("#videoPlayer").first().attr('src',video)
+
+}
+
+videoPlayerCross.addEventListener('click', e=>{
+	videoPlayerContainer.style.display = "none";
+	$("#videoPlayer").first().attr('src',"")
+
+});
